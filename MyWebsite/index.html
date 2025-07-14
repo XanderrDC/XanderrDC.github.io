@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My WebDev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <div class="loader-overlay" id="loader">
+    <div class="loader"></div>
+  </div>  
+  
+  <body>
+    <header>
+      <img src="wave-1.svg" class="wave">
+      <img src="wave-2.svg" class="wave">
+      <img src="wave-3.svg" class="wave">
+      <img src="wave-4.svg" class="wave">
+      <img src="wave-5.svg" id="shape" class="wave">
+      <div class="floating">
+      <h1 class="lobster">WebDev Protfolio</h1>
+      </div>
+      <nav>
+        <a href="..\MyWebsite\index.html"><i class="fa fa-home"></i>Home</a>
+        <a href="..\MyWebsite\sidepage.html"><i class="fa fa-briefcase"></i>My Works</a>
+        <a id="aboutBtn"><i class="fa fa-comment"></i>About</a>
+        <a id="contactBtn"><i class="fa fa-envelope"></i>Contact Me</a>
+      </nav>
+    </header>
+
+    <div id="main">
+      <main>
+        <h1 class="lobster">About Me</h1>
+        <section class="about-me">
+          <img src="me.jpg" alt="me.jpg" class="portrait">
+          <div class="bio">
+            <h2>I am Xander David A. Canlas</h2>
+            <p>I am a student of FEU Institute of Technology. My course is BSIT with the specialization on Cybersecurity. I enjoy learning about programming and cybersecurity as well as being able to utilize what I have learned to futher my education. My eventual goal is to become a offensive cybersecurity specialist working under prominent companies in the industry.</p>
+            <h2>Skills</h2>
+            <p>Basic knowledge in Web Development</p>
+            <p>Basic knowledge in C++</p>
+            <p>Basic knowledge in Java</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <p>Thank you for viewing my portfolio</p>
+        <p>© Canlas 2025</p>
+        <p><a href="x.canlas04@gmail.com"><i class="fa fa-envelope-o"></i> x.canlas04@gmail.com</a></p>
+        <p><i class="fa fa-phone"></i> 09693545808</p>
+      </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label>Name: <input type="text" id="name"  placeholder="John Doe" required></label>
+          <label>Email: <input type="email" id="email"  placeholder="JohnDoe@email.com" required></label>
+          <label>Message: <textarea id="message"  placeholder="You message here" required></textarea></label>
+          <button type="submit">Send</button>
+        </form>
+        <p id="formStatus"></p>
+      </div>
+    </div>
+
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <span2 class="close2">&times;</span2>
+        <h2>This project was made for the completion of reqirements under IT0043. This project utilizes every module taught to us so far.  </h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
