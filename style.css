@@ -295,15 +295,15 @@ footer {
   justify-content: center;
   opacity: 0;
   visibility: visible;
-  animation: FadeIn 5s ease forwards;
-  animation: FadeOut 2s ease forwards;
+  animation: loaderFadeIn 5s ease forwards;
+  animation: loaderFadeOut 2s ease forwards;
 }
-.-overlay.hidden {
+.loader-overlay.hidden {
   transition: opacity 0.5s ease, visibility 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
-@keyframes FadeIn {
+@keyframes loaderFadeIn {
   from {
     opacity: 0;
   }
@@ -312,7 +312,7 @@ footer {
   }
 }
 
-@keyframes FadeOut {
+@keyframes loaderFadeOut {
   from {
     opacity: 1;
   }
