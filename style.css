@@ -295,15 +295,15 @@ footer {
   justify-content: center;
   opacity: 0;
   visibility: visible;
-  animation: loaderFadeIn 5s ease forwards;
-  animation: loaderFadeOut 2s ease forwards;
+  animation: FadeIn 5s ease forwards;
+  animation: FadeOut 2s ease forwards;
 }
-.loader-overlay.hidden {
+.-overlay.hidden {
   transition: opacity 0.5s ease, visibility 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
-@keyframes loaderFadeIn {
+@keyframes FadeIn {
   from {
     opacity: 0;
   }
@@ -312,7 +312,7 @@ footer {
   }
 }
 
-@keyframes loaderFadeOut {
+@keyframes FadeOut {
   from {
     opacity: 1;
   }
@@ -321,11 +321,9 @@ footer {
   }
 }
 .loader {
-  height: 8vw;
-  width: 8vw;
-  max-width: 80px;
-  max-height: 80px;
-  border: 0.4vw solid #ffffff;
+  height: 4em;
+  width: 4em;
+  border: 0.3em solid #ffffff;
   position: relative;
   animation: spin1 3s infinite;
 }
