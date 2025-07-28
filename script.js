@@ -42,8 +42,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     }
 });
 
-const modal2 = document.getElementById("aboutModal");
-const btn2 = document.getElementById("aboutBtn");
+const modal2 = document.getElementById("CVModal");
+const btn2 = document.getElementById("CVBtn");
 const span2 = document.querySelector(".close2");
 
 btn2.onclick = () => modal2.style.display = "block";
